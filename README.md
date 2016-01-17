@@ -115,4 +115,4 @@ Below are the "main" tasks that you will use primarily.
 
 ===========
 
-View the Dev build at http://dev.tagglishtest.com
+View the Dev build at http://localhost:64031

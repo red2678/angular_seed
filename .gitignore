@@ -1,0 +1,13 @@
+/.bundle
+/bower_components
+logs/*
+!.gitkeep
+node_modules/
+tmp
+.DS_Store
+/ruby
+/bin
+.idea
+/docs
+/builds
+/src/main-site/_compiled

@@ -1,0 +1,33 @@
+doctype html
+html.no-js(lang='en', ng-app='myApp')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title My AngularJS App
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='css/vendor.min.css')
+    link(rel='stylesheet', href='css/screen.min.css')
+    script(src='js/head.min.js')
+  body
+    ul.menu
+      li
+        a(href='#/view1') view1
+      li
+        a(href='#/view2') view2
+    //if lt IE 7
+        p.browsehappy
+        | You are using an
+        strong outdated
+        |  browser. Please
+        a(href='http://browsehappy.com/')
+        | upgrade
+        | your browser
+        |  to improve your experience.
+    div.main(ng-view='')
+    div.footer
+      | app: v
+      span(app-version='')
+    script(src='js/vendor.min.js')
+    script(src='js/main.min.js')
+    script(src='js/partials.min.js')

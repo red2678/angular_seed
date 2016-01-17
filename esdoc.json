@@ -1,0 +1,1 @@
+{	"source": "./gulp/es",	"destination": "./docs",	"plugins": [		{"name": "esdoc-es7-plugin"}	]}

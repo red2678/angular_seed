@@ -30,7 +30,7 @@ This is a seed app for AngularJs applications.
 
 ## Style Guides
 
-#### Design
+#### Design 
 
 
 ## Code
@@ -50,8 +50,8 @@ This is a seed app for AngularJs applications.
 * eslint [JS Linter](http://eslint.org/docs/user-guide/configuring)
 
 ##### Libraries
-* AngularJs [Angular Docs](https://docs.angularjs.org/api)
-* Bourbon [Bourbon Docs ](http://bourbon.io/)
+* [AngularJs](https://docs.angularjs.org/api)
+* [Angular Material](https://material.angularjs.org/latest/)
 
 ## Project Configuration
 

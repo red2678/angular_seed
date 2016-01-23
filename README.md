@@ -58,7 +58,7 @@ This is a seed app for AngularJs applications.
 1. Install Ruby:
 	* Windows:
 		1. Install the [Ruby Windows Installer](http://rubyinstaller.org/)
-	* Mac & Linux
+	* Mac:
 		1. Ruby comes pre-installed on Macs and many Linux distributions. 
 		1. **If necessary**, use the correct installer for your system - [Ruby Installer](http://nodejs.org/)
 

@@ -49,7 +49,7 @@ This is a seed app for AngularJs applications.
 * scss-lint [SASS Linter](https://github.com/brigade/scss-lint)
 * eslint [JS Linter](http://eslint.org/docs/user-guide/configuring)
 
-##### Libraries
+##### Javascript and UI Libraries
 * [AngularJs](https://docs.angularjs.org/api)
 * [Angular Material](https://material.angularjs.org/latest/)
 

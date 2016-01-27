@@ -19,13 +19,21 @@ module.exports = {
       // JS paths concatenated into vendor.min.js
       js: [
         './bower_components/angular/angular.js',
-        './bower_components/angular-route/angular-route.js'
+        './bower_components/angular-route/angular-route.js',
+        './bower_components/angular-animate/angular-animate.min.js',
+        './bower_components/angular-aria/angular-aria.min.js',
+        './bower_components/angular-material-icons/angular-material-icons.min.js',
+        './bower_components/angular-messages/angular-messages.min.js',
+        './bower_components/angular-material/angular-material.min.js'
       ],
       // JS paths concatenated into head.min.js
       jsHead: [],
       // CSS paths concatenated into vendor.min.css
       css: [
-        './bower_components/reset-css/reset.css'
+        './bower_components/reset-css/reset.css',
+        './bower_components/angular-material/angular-material.min.css',
+        './bower_components/angular-material/angular-material.layouts.min.css',
+        './bower_components/angular-material-icons/angular-material-icons.css'
       ],
       // Vendor image paths for copying into {build}/css/images
       img: []

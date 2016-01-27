@@ -6,10 +6,13 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "angular": "~1.4.0",
-    "angular-route": "~1.4.0",
-    "angular-loader": "~1.4.0",
-    "angular-mocks": "~1.4.0",
-    "reset-css": "~2.0.2011012602"
+    "angular": "~1.4.9",
+    "angular-route": "~1.4.9",
+    "angular-loader": "~1.4.9",
+    "angular-mocks": "~1.4.9",
+    "reset-css": "~2.0.2011012602",
+    "angular-material": "~1.0.3",
+    "angular-material-icons": "~0.6.0",
+    "angular-messages": "^1.4.9"
   }
 }

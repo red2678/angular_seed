@@ -68,7 +68,6 @@ gulp.task('default', [
 	'copy',
 	'vendorJs',
 	'fonts',
-	'jsDoc',
 	'connect',
 	'watch'
 ]);
@@ -84,8 +83,7 @@ gulp.task('build', [
 	'jade',
 	'copy',
 	'vendorJs',
-	'fonts',
-	'jsDoc'
+	'fonts'
 ]);
 
 // Watch Task **********************************************************************************************************
@@ -94,7 +92,7 @@ gulp.task('watch', () => {
 		livereload.listen();
 	}
 
-	gulp.watch(g$.sourceFiles.es, ['js', 'jsLint', 'jsDoc']);
+	gulp.watch(g$.sourceFiles.es, ['js', 'jsLint']);
 	gulp.watch(g$.sourceFiles.jade, ['jade']);
 	gulp.watch(g$.sourceFiles.jsHead, ['jsHead']);
 	gulp.watch([

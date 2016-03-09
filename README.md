@@ -1,6 +1,6 @@
 # Angular Seed App
 
-[TOC]
+__TOC__
 
 ## Description
 This is a seed app for AngularJs applications.

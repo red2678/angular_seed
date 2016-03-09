@@ -16,17 +16,6 @@ Technologies used:
  1. Karma/Jasmine
  1. Protractor
 
-## Deployment
-
-1. Clone repo (follow below steps)
-2. Make a new Branch named after the project and issue number
-2a. Example: Issue #3245 in main branch and named "Fix login button" would be: "asamain-3245-fix-login-button"
-3. Make Changes
-4. Create a pull request
-5. Merge pull request into DEV
-6. Merge pull request into PPE
-6. Merge pull request into MASTER
-
 ## Style Guides
 #### Coding
 * We follow the AirBnB best practices and style guidelines for Javascript.

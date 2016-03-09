@@ -1,18 +1,23 @@
 {
   "name": "angular-seed",
   "description": "A starter project for AngularJS",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "homepage": "https://github.com/angular/angular-seed",
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "angular": "~1.4.9",
-    "angular-route": "~1.4.9",
-    "angular-loader": "~1.4.9",
-    "angular-mocks": "~1.4.9",
-    "reset-css": "~2.0.2011012602",
-    "angular-material": "~1.0.3",
+    "angular": "~1.5.0",
+    "angular-route": "~1.5.0",
+    "angular-loader": "~1.5.0",
+    "angular-mocks": "~1.5.0",
+    "reset-css": "^2.0.2011012603",
+    "angular-material": "~1.0.6",
     "angular-material-icons": "~0.6.0",
-    "angular-messages": "^1.4.9"
+    "angular-messages": "^1.5.0",
+    "angular-google-maps": "^2.3.2",
+    "angularfire": "^1.1.4",
+    "angular-ui-router": "^0.2.18",
+    "lodash": "^4.6.1",
+    "firebase": "^2.4.1"
   }
 }

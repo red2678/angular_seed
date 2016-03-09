@@ -1,0 +1,25 @@
+<md-toolbar class="md-toolbar-tools">
+  <h1 class="visually-hidden">Header</h1>
+  <md-button hide-gt-md class="md-icon-button" aria-label="Settings" ng-click="$ctrl.toggleLeft()">
+    <i class="material-icons">menu</i>
+  </md-button>
+  <h2>
+    <span>Angular Seed App</span>
+  </h2>
+  <span flex></span>
+  <md-menu md-position-mode="target-right target" >
+    <md-button aria-label="Open demo menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+      <i class="material-icons">more_vert</i>
+    </md-button>
+    <md-menu-content width="4">
+      <md-menu-item>
+        <md-button ui-sref="app.login">
+          <div layout="row">
+            <i class="material-icons" style="margin: auto 3px auto 0;">perm_identity</i>
+            <p flex>Login</p>
+          </div>
+        </md-button>
+      </md-menu-item>
+    </md-menu-content>
+  </md-menu>
+</md-toolbar>

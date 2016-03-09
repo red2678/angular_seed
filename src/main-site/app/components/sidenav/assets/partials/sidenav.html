@@ -1,0 +1,29 @@
+<md-sidenav flex md-is-locked-open="$mdMedia('gt-md')" md-component-id="left">
+  <h1 class="visually-hidden">Main Menu</h1>
+  <md-list>
+    <md-list-item>
+      <md-button ui-sref="app.login" ng-click="$ctrl.close()">
+        <div layout="row" flex>
+          <i class="material-icons" style="margin: auto 3px auto 0;">account_circle</i>
+          <p flex>Login</p>
+        </div>
+      </md-button>
+    </md-list-item>
+    <md-list-item>
+      <md-button ui-sref="app" ng-click="$ctrl.close()">
+        <div layout="row" flex>
+          <i class="material-icons" style="margin: auto 3px auto 0;">home</i>
+          <p flex>Home</p>
+        </div>
+      </md-button>
+    </md-list-item>
+    <md-list-item>
+      <md-button ui-sref="app.search" ng-click="$ctrl.close()">
+        <div layout="row" flex>
+          <i class="material-icons" style="margin: auto 3px auto 0;">search</i>
+          <p flex>Search</p>
+        </div>
+      </md-button>
+    </md-list-item>
+  </md-list>
+</md-sidenav>

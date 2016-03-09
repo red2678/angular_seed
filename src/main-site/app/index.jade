@@ -6,23 +6,26 @@ html.no-js(lang='en', ng-app='myApp')
     title My AngularJS App
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href="https://fonts.googleapis.com/icon?family=Material+Icons")
     link(rel='stylesheet', href='css/vendor.min.css')
     link(rel='stylesheet', href='css/screen.min.css')
-    script(src='js/head.min.js')
-  body
+    //script(src='js/head.min.js')
+  body(layout='column')
     //if lt IE 7
-            p.browsehappy
-            | You are using an
-            strong outdated
-            |  browser. Please
-            a(href='http://browsehappy.com/')
-            | upgrade
-            | your browser
-            |  to improve your experience.
-    div.main(ng-view='' layout="row")
-    div.footer(layout="row")
-    | app: v
-    span(app-version='')
+      p.browsehappy
+        | You are using an
+        strong outdated
+        |  browser. Please
+        a(href='http://browsehappy.com/')
+        | upgrade
+        | your browser
+        | to improve your experience.
+    header(ui-view='header')
+    main(class='container', layout='row', flex)
+      h1.visually-hidden Content
+      nav(ui-view='sidebar', class='md-whiteframe-z2', style='margin-right: 2px;', layout='column')
+      section(ui-view='content', class='md-body-1', flex, layout='column')
+    footer(ui-view='footer')
     script(src='js/vendor.min.js')
     script(src='js/main.min.js')
     script(src='js/partials.min.js')

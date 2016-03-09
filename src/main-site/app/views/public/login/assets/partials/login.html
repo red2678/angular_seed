@@ -1,0 +1,22 @@
+<md-content layout="vertical" flex id="content">
+  <div layout="row" layout-align="center center" layout-fill>
+    <md-whiteframe style="margin: 40px;" class="md-whiteframe-8dp" layout="column" flex-gt-sm="33" flex="66" layout-padding>
+      <md-content>
+        <md-input-container>
+          <label>Email</label>
+          <input ng-model="$ctrl.user.email">
+        </md-input-container>
+        <md-input-container>
+          <label>Password</label>
+          <input ng-model="$ctrl.user.password" type="password">
+        </md-input-container>
+        <md-input-container layout-align="center center">
+          <div layout="row" layout-sm="column" layout-margin>
+            <md-button class="md-raised" flex="50" flex-sm="100" ng-click="$ctrl.login()">Login</md-button>
+            <md-button class="md-raised md-primary" flex="50" flex-sm="100" ui-sref="app.register">Register</md-button>
+          </div>
+        </md-input-container>
+      </md-content>
+    </md-whiteframe>
+  </div>
+</md-content>

@@ -1,0 +1,22 @@
+<div layout-padding><h1>Search Page</h1>
+<input type="search" placeholder="Search Google Places API" ng-model="vm.search"/></div>
+<md-content layout="row" layout-padding>
+  <div flex="33">
+    <p>List Of Restaurants:</p>
+    <md-list>
+      <md-list-item class="md-2-line" ng-repeat="place in $ctrl.places">
+        <div class="md-list-item-text">
+          <h4>{{ place.name }}</h4>
+          <h6>Rating: {{ place.rating }}</h6>
+          <p></p>
+          <div ng-if="place.photos.length > 0">
+            <img onload="place.photos[0].getUrl()" alt="">
+          </div>
+        </div>
+      </md-list-item>
+    </md-list>
+  </div>
+  <div flex>
+    <ui-gmap-google-map center="$ctrl.map.center" zoom="$ctrl.map.zoom" pan="$ctrl.map.zoom"></ui-gmap-google-map>
+  </div>
+</md-content>

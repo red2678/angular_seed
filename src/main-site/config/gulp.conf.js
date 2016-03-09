@@ -1,8 +1,13 @@
 'use strict';
 
-module.exports = {
+const mainConfig = {
   subFolder: 'main-site',
+  environment: 'dev',
+  liveReload: true,
+  debug: false,
   sourceFiles: {
+
+    entry: './src/main-site/app/assets/es/app.es6',
 
     // ES2015 (ES6) paths
     es: [
@@ -18,13 +23,18 @@ module.exports = {
     vendor: {
       // JS paths concatenated into vendor.min.js
       js: [
-        './bower_components/angular/angular.js',
-        './bower_components/angular-route/angular-route.js',
+        './bower_components/lodash/dist/lodash.min.js',
+        './bower_components/angular/angular.min.js',
+        './bower_components/angular-ui-router/release/angular-ui-router.min.js',
         './bower_components/angular-animate/angular-animate.min.js',
         './bower_components/angular-aria/angular-aria.min.js',
         './bower_components/angular-material-icons/angular-material-icons.min.js',
         './bower_components/angular-messages/angular-messages.min.js',
-        './bower_components/angular-material/angular-material.min.js'
+        './bower_components/angular-material/angular-material.min.js',
+        './bower_components/angular-simple-logger/dist/angular-simple-logger.min.js',
+        './bower_components/angular-google-maps/dist/angular-google-maps.min.js',
+        './bower_components/firebase/firebase.js',
+        './bower_components/angularfire/dist/angularfire.min.js'
       ],
       // JS paths concatenated into head.min.js
       jsHead: [],
@@ -106,3 +116,5 @@ module.exports = {
 
   }
 };
+
+export default mainConfig;

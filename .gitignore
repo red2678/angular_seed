@@ -1,3 +1,5 @@
+/.idea
+/node_modules
 /.bundle
 /bower_components
 logs/*

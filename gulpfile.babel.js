@@ -455,12 +455,12 @@ gulp.task('clean', () => {
 // Clean All Build Folders *********************************************************************************************
 gulp.task('clean:all', () => {
   g$.deleteFiles([
-    './_BUILDS/dev/**/*',
-    './_BUILDS/ppe/**/*',
-    './_BUILDS/prod/**/*',
-    './_BUILDS/release/**/*',
-    './_SRC/**/js_compiled',
-    '!./_BUILDS/**/.gitignore'
+    './builds/dev/**/*',
+    './builds/ppe/**/*',
+    './builds/prod/**/*',
+    './builds/release/**/*',
+    './src/**/js_compiled',
+    '!./builds/**/.gitignore'
   ])
 });
 

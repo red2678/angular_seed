@@ -12,7 +12,7 @@
 
     // Firebase.enableLogging(true);
 
-    const _url = 'angular1xseed.firebaseapp.com';
+    const _url = 'https://angular1xseed.firebaseapp.com';
     const _ref = new Firebase(_url);
 
     return {

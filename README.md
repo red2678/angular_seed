@@ -1,13 +1,12 @@
 # Angular Seed App
 
-## TOC
-* [Description](#description)
-* [Deployment](#Deployment)
-* [Style Guides](#style-guides)
+[TOC]
 
 ## Description
 This is a seed app for AngularJs applications.
- Technologies used:
+
+Technologies used:
+
  1. HTML5
  1. JADE
  1. ES6 (ecmascript 2015)
@@ -29,90 +28,244 @@ This is a seed app for AngularJs applications.
 6. Merge pull request into MASTER
 
 ## Style Guides
+#### Coding
+* We follow the AirBnB best practices and style guidelines for Javascript.
+	* [AirBnB Style Guide](https://github.com/airbnb/javascript)
+* Best practices and style guidelines for Angular.
+	* [Angular Style Guide](https://github.com/johnpapa/angular-styleguide)
+* Best practices and style guidelines for SASS.
+	* [SASS Style Guide](http://sass-lang.com/styleguide)
+* Best practices and style guidelines for Protractor.
+	* [Protractor Style Guide](https://github.com/CarmenPopoviciu/protractor-styleguide)
 
-#### Design 
+#### Design
+* We follow the Google best practices from the Material Design style guide.
+	* [Material Design Style Guide](https://www.google.com/design/spec/material-design/introduction.html)
 
-
-## Code
-#### Best Practices and Styles Guides
-* We follow the AirBnB best practices and style guidelines for Javascript [AirBnB Style Guide]([https://github.com/airbnb/javascript](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml))
-* Best practices and style guidelines for Angular [Angular Style Guide](https://github.com/johnpapa/angular-styleguide)
-* Best practices and style guidelines for SASS [SASS Style Guide](http://sass-lang.com/styleguide)
-* Best practices and style guidelines for Protractor [Protractor Style Guide](https://github.com/CarmenPopoviciu/protractor-styleguide)
-## Docs
-##### Devops
-* NodeJs [NodeJs Docs](https://nodejs.org/documentation/)
-* Ruby [Ruby Docs](https://www.ruby-lang.org/en/documentation/)
-* Ruby Installer (Windows) [Ruby Installer](http://rubyinstaller.org/)
-* Git [Git Version Control](https://git-scm.com/documentation)
-* SASS (scss) [SASS Docs](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
-* scss-lint [SASS Linter](https://github.com/brigade/scss-lint)
-* eslint [JS Linter](http://eslint.org/docs/user-guide/configuring)
-
-##### Javascript and UI Libraries
-* [AngularJs](https://docs.angularjs.org/api)
+## 3rd Party Docs
+##### Coding
 * [Angular Material](https://material.angularjs.org/latest/)
+* [AngularJs](https://docs.angularjs.org/api)
+* [SASS Docs](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
 
-## Project Configuration
-
-1. Install Ruby:
-	* Windows:
-		1. Install the [Ruby Windows Installer](http://rubyinstaller.org/)
-	* Mac:
-		1. Ruby comes pre-installed on Macs and many Linux distributions. 
-		1. **If necessary**, use the correct installer for your system - [Ruby Installer](http://nodejs.org/)
-
-1. Install [NodeJs](https://nodejs.org/en/) with Homebrew
-	* Working from your user root `cd ~/`
-	* Install Homebrew 
-		1. `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-	* Install NodeJs **4.x LTS** and [FlowType](http://flowtype.org/) with Homebrew
-		1. `brew install node4-lts`
-			* Verify node version `node -v` should be **4.x.x**
-		1. `brew install flow`
-	* Install a few NodeJs global dependencies. **NOTE** you do not need `SUDO` here, thanks Homebrew ;)
-	    1. `npm install -g gulp bower babel-cli npm-check-updates`
-
-1. Install [Bundler](http://bundler.io/)
-	1. Working from your user root `cd ~/`
-	1. `gem install bundler`
-
-1. Install [Git](https://git-scm.com/) if needed 
-	* Windows, Mac & Linux:
-		1. Download the installer [Git Installer](https://git-scm.com/download/)
-
-1. Clone the repo to your local environment
-	1. `git checkout`
-
-1. Run `npm run initapp'
-
-1. Start developing by executing the `gulp` default task
-	1. The `gulp` default task will do several things:
-	
-
-*See the Gulp section for more information about Gulp tasks.*
+##### DevOps
+* [Bundler](http://bundler.io/)
+* [eslint](http://eslint.org/docs/user-guide/configuring)
+* [FlowType](http://flowtype.org/)
+* [Git](https://git-scm.com/documentation)
+* [Homebrew](http://brew.sh/)
+* [NodeJs](https://nodejs.org/documentation/)
+* [Ruby](https://www.ruby-lang.org/en/documentation/)
+* [Ruby Installer (Windows)](http://rubyinstaller.org/)
+* [scss-lint](https://github.com/brigade/scss-lint)
 
 ## Development 
+*****
 
-#### Bower
+#### Branches and Builds
+There are two main builds for this project: Development and Production. Each of these builds is produced from a branch of the same name (ex. master/dev === the DEV build). Theses are the only branches that get deployed.
 
-Any Third-party javascript libraries will be downloaded and managed by [bower](http://bower.io/). They *should not* by committed into the repository.
+#### Deployment
 
-`npm install` will automatically download any third-party library that has not already been installed.
+1. Setup project (follow below [steps](#setup)).
+1. Make a new Branch named after the project and issue number.
+	1. Example: Issue #3245 in red2678/angular_seed Main and named "Fix login button" would be: "asafe-3245-fix-login-button".
+1. Make Changes and include a description.
+1. Create a pull request and get it approved.
+1. Merge pull request into DEV.
+1. Merge pull request into MASTER.
 
-Please see the [bower documentation](https://github.com/bower/bower) for information on bower, such as how to install new libraries or upgrade existing ones.
+#### IDE Configuration
 
-#### Introducing Test Dependencies
+##### IntelliJ IDEA 15.x
+###### Configuring FlowType
+1. Open settings
+	1. Click on `IntelliJ IDEA` from the top menu.
+	1. Click `Preferences`.
+	1. In the settings window on the left-hand menu, click `Languages and Frameworks`.
+	1. Click `Javascript`.
+	1. In the right-hand pane, from the dropdown labeled `JavaScript Language Version` select `flow`.
+	1. _[**View Image**](http://imgur.com/auP6068)_
 
+###### Configuring Gulp Tasks
+
+
+###### The NPM and Gulp Toolbars
+
+#### Project Configuration - WINDOWS
+Windows instructions coming soon!! 
+ 
+#### Project Configuration - MAC
+The below instructions are for **Macintosh**.
+
+##### 1. Install Ruby
+1. Ruby comes pre-installed on most Mac distributions, use the below steps only **if necessary**.
+	1. Download and run the installer for your system.
+		* [Ruby Installer](https://www.ruby-lang.org/en/)
+	1. **Recommended**, use the Ruby Version Manager (RVM) to manage Ruby versions on your machine.
+		* [Ruby Version Manager](https://rvm.io/)
+
+##### 2. Install [NodeJs](https://nodejs.org/en/) and [FlowType](http://flowtype.org/) with [Homebrew](http://brew.sh/)
+1. Working from your user root `cd ~/`.
+1. Install Homebrew.
+	1. `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+1. Install NodeJs **4.x LTS** and FlowType with Homebrew.
+	1. `brew install node4-lts`
+		* If the above command fails, try `brew install homebrew/versions/node4-lts`
+	1. `brew install flow`
+		* For instructions on configuring FlowType [see here](#markdown-header-configuring-flowtype).
+1. Install a few NodeJs global dependencies. **NOTE** you do not need `SUDO` here, thanks Homebrew ;)
+	1. `npm install -g gulp`
+	1. `npm install -g bower`
+	1. `npm install -g babel-cli`
+	1. `npm install -g npm-check-updates`
+
+##### 3. Install [Bundler](http://bundler.io/)
+1. Working from your user root `cd ~/`.
+1. `gem install bundler`
+
+##### 4. Install Git
+1. Go to main Git website [https://git-scm.com/](https://git-scm.com/), and download the installer, then run it.
+	* *Note:* _Based on your operating system, the download link on the home page will serve up the appropriate installer._
+
+##### 5. Cloning Repo
+This will determine your your project root.
+
+###### Using the [Git CLI](https://git-scm.com/doc)
+1. Open a Terminal and navigate to where you wish to store the project *(the below is an example, using SSH)*.
+1. `cd ~/workspaces`
+1. `git clone https://github.com/red2678/angular_seed.git`
+1. `cd angular_seed`
+
+###### Using SourceTree
+1. Link to sub page with screen shots :: needs to be done
+
+##### 6. Init Project
+1. Working from your project root run `npm run initapp`
+
+##### 7. Start Developing
+To start developing, execute the `gulp` default task.
+
+1. The `gulp` default task will do several things
+	1. Builds project from `src/main-site/` for the `dev` environment to `builds/dev/main-site`.
+	1. Runs site in web browser with [gulp-connect](https://www.npmjs.com/package/gulp-connect) with live reload support.
+	1. Runs gulp watchers.
+1. Open `http://localhost:60431` in your web browser.
+
+*See the Gulp section for more detailed information about the Gulp tasks for this project.*
+
+#### Third-party Libraries 
+
+Third-party libraries are downloaded and managed by *bower*, *npm* and *bundler*. They **should not** be committed into the repository.
+
+* `npm initapp` will automatically download any third-party libraries.
+* You can use `ncu` to check node dependencies and `ncu -m` to check bower dependencies.
+ 	* **WARNING** If you run suggested commands, output by the above command, `ncu -u` or `ncu -m -u` this updates the actual *bower.json* or *package.json* with the latest version number for the packages. Only do this if you really mean it :) 
+* You can use `bundle outdated` to check Ruby Gem dependencies via bundler.
+
+#### Unit and e2e Testing
+We are using Jasmine/Karma for unit and Protractor for e2e.
+
+- `gulp protractor`
+- `gulp jsTest`
 
 ## Gulp
+### Config
+We are using [gConfig](https://www.npmjs.com/package/gconfig) as a configuration helper.
 
-Below are the "main" tasks that you will use primarily.
+### Grouped Tasks
+Below are the "main" or grouped tasks that you will use primarily.
 
-#### Main Tasks
+#### `default`
+* `gulp` - Runs the following tasks:
+	* [clean](#markdown-header-babel)
+	* [loadConfig](#markdown-header-loadconfig)
+	* [sass](#markdown-header-sass)
+	* [js](#markdown-header-js)
+	* [html](#markdown-header-html)
+	* [jade](#markdown-header-jade)
+	* [copy](#markdown-header-copy)
+	* [vendorJs](#markdown-header-vendorjs)
+	* [fonts](#markdown-header-fonts)
+	* [jsDoc](#markdown-header-jsdoc)
+	* [connect](#markdown-header-connect)
+	* [watch](#markdown-header-watch)
+	
+#### `build`
+* `gulp build` - Runs the following tasks:
+	* [clean](#markdown-header-babel)
+	* [loadConfig](#markdown-header-loadconfig)
+	* [sass](#markdown-header-sass)
+	* [js](#markdown-header-js)
+	* [html](#markdown-header-html)
+	* [jade](#markdown-header-jade)
+	* [copy](#markdown-header-copy)
+	* [vendorJs](#markdown-header-vendorjs)
+	* [fonts](#markdown-header-fonts)
+	* [jsDoc](#markdown-header-jsdoc)
 
+#### `watch`
+`gulp watch` - Sets up Gulp watcher tasks for the source files, see `gulpfile.babel.js` and specifically the `watch` task for more information on what is being watched.  
 
+### Individual Tasks
 
-===========
+#### Build Tasks
+****
 
-View the Dev build at http://localhost:64031
+##### `connect`
+##### `connectTest`
+##### `copy`
+##### `createArchive`
+##### `loadConfig`
+Loads the Gulp configuration from `src/main-site/config/gulp.conf.js`. 
+##### `produceArtifacts`
+##### `turnOffLiveReload`
+
+#### Clean Tasks
+****
+
+##### `clean`
+Cleans the current build folder
+##### `clean:all`
+Cleans all build folders
+
+#### JS Tasks
+****
+
+##### `babel` 
+Compiles all `*.es6` files
+
+##### `js`
+Takes complied JS, uglfies and concats it into `main.min.js`.
+
+##### `jsDoc`
+##### `jsLint`
+
+#### Testing Tasks
+****
+
+##### `jsTest`
+##### `protractor`
+##### `test`
+
+#### Vendor Tasks
+****
+
+##### `fonts`
+##### `vendorCss`
+##### `vendorImg`
+##### `vendorJs`
+##### `vendorJsHead`
+
+#### HTML Tasks
+****
+
+##### `html` 
+##### `jade`
+##### `partials`
+
+#### SASS Tasks
+****
+
+##### `sass`
+Main SASS to CSS processing task.
